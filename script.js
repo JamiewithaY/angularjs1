@@ -29,12 +29,12 @@ var app = angular.module("computer", ['ngRoute'])
 }])
 
 //controller will have the name, the dependencies
-.controller('MainCtrl', ['$scope', 'http', function($scope){
+.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
   // what do we want to happen when the MainCtrl is called on a route
   // $scope.person = "John Doe"; scope defined variable that can be used in view (main.html)
   //console.log($scope);
   $http.get('services.json').then(function(response){
-    $scope.services = repsonse.data;
+    $scope.services = response.data;
   });
 }])
 //We are going to create a GET request to our JSON file
@@ -53,6 +53,3 @@ var app = angular.module("computer", ['ngRoute'])
   });
 }])
 
-.controller('ContactCtrl', ['$scope', function($scope){
-  
-}]);
