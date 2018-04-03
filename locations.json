@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1, 
+    "city": "Austin, TX", 
+    "phone": "555-555-5555"
+  }, 
+   {
+    "id": 2, 
+    "city": "Las Vegas, NV", 
+    "phone": "444-444-4444"
+   },
+   {
+    "id": 3, 
+    "city": "Chicago, IL", 
+    "phone": "333-333-3333"
+   }
+  ]
+  

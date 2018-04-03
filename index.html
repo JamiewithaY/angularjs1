@@ -1,94 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    <title>Computer Solutions</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/">
-
+    <html lang="en" ng-app="computer">
+      <head>
+        
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      
+      <title>Computer Solutions</title>
+     
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <div class="masthead">
-        <h3 class="text-muted">Computer Solutions</h3>
-
-        <nav >
+      
+      </head>
+      
+      <body>
+        
+    <!--SITE NAV BAR-->
+      <div class="container">
+        <div class="masthead">
+          <h3 class="text-muted">Computer Solutions</h3>
+          <nav>
             <ul class="nav nav-justified">
               <li class="nav-item">
-                <a href="index.html" class="btn btn-primary">Home</a>
+                <a href="#/main" class="btn btn-primary">Home</a>
               </li>
               <li class="nav-item">
-                <a href="about.html" class="btn btn-primary">About</a>
+                <a href="#/about" class="btn btn-primary">About</a>
               </li>
               <li class="nav-item">
-                <a href="services.html" class="btn btn-primary">Services</a>
+                <a href="#/services" class="btn btn-primary">Services</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="btn btn-primary">Contact</a>
+                <a href="#/contact" class="btn btn-primary">Contact</a>
               </li>
             </ul>
-        </nav> 
-      </div>
-    
-
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Computer Solutions!</h1>
-          <div class="row">
-            <div class="col-md-4">
-              <img src="https://www.addontechnologies.net/img/angularjs-banner.png">
-            </div>
-            <div class="col-md-8">        
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-            </div>
-          </div>
+          </nav>
+        </div>
         
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Hardware Repair</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          
-        </div>
-        <div class="col-lg-4">
-          <h2>Virus Removal</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          
+        
+       
+<!--Two directives will be put here. 1= Controller which will be the main controller 2=put in the view directive -->
+       
+       <div ng-controller="MainCtrl">
+       <div ng-view></div>
        </div>
-        <div class="col-lg-4">
-          <h2>System Tuneup</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          
-        </div>
+        
+       
+       
+       
+       
+<!-- Site footer -->
+        <footer class="footer">
+          <p>© Company 2018</p>
+        </footer>
       </div>
-
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; Company 2018</p>
-      </footer>
-
-    </div> <!-- /container -->
+      <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+    
+    <script src="script.js"></script>
   </body>
 </html>
+   
+
